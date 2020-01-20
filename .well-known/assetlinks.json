@@ -1,0 +1,5 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.goozionline.app",
+               "sha256_cert_fingerprints": ["2B:80:83:30:43:0F:23:B3:55:3D:0F:0B:D6:1B:44:E1:B8:5F:35:0D:03:07:D1:27:CC:89:69:E0:A7:FA:91:90"] }
+}]

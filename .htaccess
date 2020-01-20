@@ -1,0 +1,44 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^index$ index.php$1 [L,QSA,NC]
+RewriteRule ^contact-us$ contact.php$1 [L,QSA,NC]
+RewriteRule ^logout$ logout.php$1 [L,QSA,NC]
+
+RewriteRule ^runner-login$ runner-login.php$1 [L,QSA,NC]
+RewriteRule ^runner-reg$ runner-reg.php$1 [L,QSA,NC]
+RewriteRule ^runner-thanks$ runner-thanks.php$1 [L,QSA,NC]
+RewriteRule ^runner/home$ runner-home.php$1 [L,QSA,NC]
+RewriteRule ^request/(.*)$ request.php?reference=$1 [L,QSA,NC]
+
+RewriteRule ^user-login$ user-login.php$1 [L,QSA,NC]
+RewriteRule ^user-reg$ user-reg.php$1 [L,QSA,NC]
+RewriteRule ^user/home$ user-home.php$1 [L,QSA,NC]
+RewriteRule ^user/cart$ user-cart.php$1 [L,QSA,NC]
+RewriteRule ^market/(.*)$ market.php?market=$1 [L,QSA,NC]
+RewriteRule ^user/thanks$ user-thanks.php$1 [L,QSA,NC]
+
+RewriteRule ^admin/home$ admin/index.php$1 [L,QSA,NC]
+RewriteRule ^admin/users$ admin/users.php$1 [L,QSA,NC]
+RewriteRule ^admin/orders$ admin/orders.php$1 [L,QSA,NC]
+RewriteRule ^admin/user/(.*)$ admin/user.php?user=$1 [L,QSA,NC]
+RewriteRule ^admin/order/(.*)$ admin/order.php?order=$1 [L,QSA,NC]
+RewriteRule ^admin/runner/(.*)$ admin/runner.php?runner=$1 [L,QSA,NC]
+RewriteRule ^admin/pending-runners$ admin/pending-runners.php$1 [L,QSA,NC]
+RewriteRule ^admin/invited-applicants$ admin/invited.php$1 [L,QSA,NC]
+RewriteRule ^admin/active$ admin/active.php$1 [L,QSA,NC]
+RewriteRule ^admin/approved$ admin/approved.php$1 [L,QSA,NC]
+RewriteRule ^admin/available$ admin/available.php$1 [L,QSA,NC]
+RewriteRule ^home$ dashboard.php$1 [L,QSA,NC]
+
+RewriteRule ^payment/webhook$ payment/web-hook.php$1 [L,QSA,NC]
+RewriteRule ^verify-payment$ payment/mverify.php$1 [L,QSA,NC]
+RewriteRule ^payment/verify/reference/(.*)$ payment/verify.php?reference=$1 [L,QSA,NC]
+RewriteRule ^order/(.*)$ order.php?reference=$1 [L,QSA,NC]
+RewriteRule ^complete-order/(.*)$ complete-order.php?reference=$1 [L,QSA,NC]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# This domain inherits the “PHP” package.
+# php -- END cPanel-generated handler, do not edit

@@ -1,0 +1,40 @@
+[11-Jan-2020 17:06:57 UTC] PHP Notice:  Undefined index: email in /home/damoskit/goozionline.com/functions/function.php on line 450
+[11-Jan-2020 17:06:57 UTC] PHP Fatal error:  Uncaught SendGrid\Mail\TypeException: $emailAddress must be valid and of type string. in /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/EmailAddress.php:76
+Stack trace:
+#0 /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/EmailAddress.php(51): SendGrid\Mail\EmailAddress->setEmailAddress('')
+#1 /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/Mail.php(199): SendGrid\Mail\EmailAddress->__construct('', 'Nd', NULL)
+#2 /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/Mail.php(362): SendGrid\Mail\Mail->addRecipientEmail('\\SendGrid\\Mail\\...', '', 'Nd', NULL, NULL, NULL)
+#3 /home/damoskit/goozionline.com/functions/function.php(457): SendGrid\Mail\Mail->addTo('', 'Nd')
+#4 /home/damoskit/goozionline.com/admin/runner.php(67): inviteApplicant('invited')
+#5 {main}
+  thrown in /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/EmailAddress.php on line 76
+[11-Jan-2020 17:07:44 UTC] PHP Notice:  Undefined index: email in /home/damoskit/goozionline.com/functions/function.php on line 478
+[11-Jan-2020 17:07:44 UTC] PHP Fatal error:  Uncaught SendGrid\Mail\TypeException: $emailAddress must be valid and of type string. in /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/EmailAddress.php:76
+Stack trace:
+#0 /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/EmailAddress.php(51): SendGrid\Mail\EmailAddress->setEmailAddress('')
+#1 /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/Mail.php(199): SendGrid\Mail\EmailAddress->__construct('', 'Nd', NULL)
+#2 /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/Mail.php(362): SendGrid\Mail\Mail->addRecipientEmail('\\SendGrid\\Mail\\...', '', 'Nd', NULL, NULL, NULL)
+#3 /home/damoskit/goozionline.com/functions/function.php(486): SendGrid\Mail\Mail->addTo('', 'Nd')
+#4 /home/damoskit/goozionline.com/admin/runner.php(82): approveApplication('approved')
+#5 {main}
+  thrown in /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/EmailAddress.php on line 76
+[17-Jan-2020 09:40:12 UTC] PHP Notice:  Undefined index: email in /home/damoskit/goozionline.com/functions/function.php on line 450
+[17-Jan-2020 09:40:13 UTC] PHP Fatal error:  Uncaught SendGrid\Mail\TypeException: $emailAddress must be valid and of type string. in /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/EmailAddress.php:76
+Stack trace:
+#0 /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/EmailAddress.php(51): SendGrid\Mail\EmailAddress->setEmailAddress('')
+#1 /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/Mail.php(199): SendGrid\Mail\EmailAddress->__construct('', 'Deborah', NULL)
+#2 /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/Mail.php(362): SendGrid\Mail\Mail->addRecipientEmail('\\SendGrid\\Mail\\...', '', 'Deborah', NULL, NULL, NULL)
+#3 /home/damoskit/goozionline.com/functions/function.php(457): SendGrid\Mail\Mail->addTo('', 'Deborah')
+#4 /home/damoskit/goozionline.com/admin/runner.php(67): inviteApplicant('invited')
+#5 {main}
+  thrown in /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/EmailAddress.php on line 76
+[17-Jan-2020 09:45:20 UTC] PHP Notice:  Undefined index: email in /home/damoskit/goozionline.com/functions/function.php on line 478
+[17-Jan-2020 09:45:20 UTC] PHP Fatal error:  Uncaught SendGrid\Mail\TypeException: $emailAddress must be valid and of type string. in /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/EmailAddress.php:76
+Stack trace:
+#0 /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/EmailAddress.php(51): SendGrid\Mail\EmailAddress->setEmailAddress('')
+#1 /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/Mail.php(199): SendGrid\Mail\EmailAddress->__construct('', 'Deborah', NULL)
+#2 /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/Mail.php(362): SendGrid\Mail\Mail->addRecipientEmail('\\SendGrid\\Mail\\...', '', 'Deborah', NULL, NULL, NULL)
+#3 /home/damoskit/goozionline.com/functions/function.php(486): SendGrid\Mail\Mail->addTo('', 'Deborah')
+#4 /home/damoskit/goozionline.com/admin/runner.php(82): approveApplication('approved')
+#5 {main}
+  thrown in /home/damoskit/goozionline.com/vendor/sendgrid/sendgrid/lib/mail/EmailAddress.php on line 76

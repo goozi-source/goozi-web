@@ -1,0 +1,6 @@
+{
+    "require": {
+        "sendgrid/sendgrid": "~7",
+        "yabacon/paystack-php": "^2.1"
+    }
+}
